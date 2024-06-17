@@ -4,10 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "tsc -w",
+    "start.dev":"nodemon dist/server.js",
+    "start.prod":"node dist/server.js",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "prettier":"prettier --ignore-path .gitignore --write \"./src/*.+(js|ts|json)\""
+    "prettier": "prettier --ignore-path .gitignore --write \"./src/*.+(js|ts|json)\""
   },
   "keywords": [],
   "author": "",
